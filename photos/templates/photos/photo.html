@@ -21,9 +21,13 @@
                     <p>{{photo.description}}</p>
                 </div>
             </div>
-            <div class="modal-footer justify-content-center">
-                <button type="button" name="button" class="btn btn-primary btn-sm mr-4" value="https://bernicegallery.herokuapp.com{{photo.image.url}}" onclick="copylink(this.value)">Copy Image Link</button>
-
+        </div>
+        <div class="modal-footer my-3" >
+            <input class="form-control input-lg" type="text"
+                   value="{{photo.image.url}}" id="{{image.id}}.url">
+            <button class="btn btn-success btn-sm" onclick="copyLink('{{image.id}}.url')">Copy</button>
+            
+            </button>
         </div>
     </div>
     
